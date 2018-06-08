@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img-content/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style-support.css" >
+    <link rel="stylesheet" href="css/fonts.css" >
+    <link rel="stylesheet" href="css/animate.css" >
+    
+
+    <title>Трансформация</title>
+  </head>
+  <body>
+
+  <header>
+  <!--HEADER-->
+    <nav class="navbar navbar-expand-lg navbar-light top-nav scrolling-navbar indigo navbar-fixed-top" id="hero-area">
+      <div class="container">
+        <a class="navbar-brand" href="#0" data-target=".navbar-collapse">
+          <img src="img-content/logo-8.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item ">
+              <a class="nav-link page-scroll" href="#1" >Калькулятор заработка <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#2" >Знаменитости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#3" >Сертификаты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#4" >FAQ</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-light wrapper-support" >Поддержка</button>
+        </div>
+      </div>
+    </nav>
+  <!--end - HEADER-->
+    <section class="first-section">
+      <div class="live-chat">
+         <div class="header">
+            <a href="#" class="chat-close">
+              &times;
+            </a>
+            <img class="agent circle" src="img-content/face.jpg" alt="avatar"/>
+            <h5>Мария</h5>
+         </div>
+         <div class="chat-history">
+         <a href="#" class=" head-2-close chat-close">
+              &times;
+         </a>
+         <div class="head-2">
+            <img class="agent circle" src="img-content/face.jpg" alt="avatar"/>
+            
+         </div>
+            <h4>Поддержка</h4>
+            <p>Напишите ваше сообщение здесь</p>
+            <form action="#">
+               <fieldset>
+                  <div class="type-nano">
+                     <input type="email" class="email" id="email-sup" name="email" placeholder="Ваш email" required="required" >
+                     <div id="valid"></div>
+                  </div>
+                  <div class="characters">
+                     <span><span id="remain">250</span> допустимых символов</span>
+                     <p id="message"></p>
+                  </div>
+                  <textarea type="text" class="message-input" id="text" maxlength="250" minlength="5" placeholder="Сообщение..."></textarea>
+               </fieldset>
+               <div class="btn-container">
+                    <button type="submit" class="btn-style btn-box" id="btn-support">Отправить</button>
+               </div>
+            </form>
+         </div> 
+      </div>
+      <!--POPUP-UP-->
+      <div id="modal_form" data-modal>
+        <div class="btn-close">
+          <a class="close_button" id="modal_close" data-close>&times;</a>
+        </div>
+          
+         <div class="title">
+            Вы только что сделали</br> 
+            <span>БОЛЬШУЮ ошибку!</span>
+         </div>
+         <div class="description-modal">
+            <span>Это ваш последний ШАНС</span> 
+         </div>
+        <div class="panel-form">
+          <form action="#" class="form-horizontal" id="bigForm1">
+              <div class="form-group">
+                <div class = "form-group ">
+
+                  <input type="email" name="email" id="email" class=" email form-control input-sm" placeholder="Ваш e-mail" required="required" aria-required="true">
+                </div>
+                <div class = "form-group ">
+                  <input id="lastName" name="last_name" required="" class=" lastname form-control input-sm" placeholder="Ваша фамилия" type="text" aria-required="true">
+                  <input type="text" name="first_name" id="first_name" class=" firstname form-control input-sm" placeholder="Ваше имя" required="required" aria-required="true">
+                </div>
+                <div class = "form-group ">
+                  <input type = "password" class = "form-control" id="formPassword" name="password" minlength="6"  placeholder = "Пароль" required="" aria-required="true">
+                </div>
+              </div>
+              <div class = "form-group ">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 input-code">
+                      <input type="text" name="phonecc" class=" phonecc form-control input-group-lg"  placeholder="code" required="" aria-required="true">
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8 input-phone">
+                      <input type="text" name="phone" class="form-control input-group-lg"  placeholder="Телефон" required="" aria-required="true">
+                    </div>
+                </div>
+              </div>
+              <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
+              <input type="hidden" class="affiliate_id" name="affiliate_id" value="" autocomplete="off">
+            <button type="submit" class="btn btn-all">Регистрация</button>
+          </form>
+        </div>
+      </div>
+      <div id="overlay" data-overlay></div>
+    <!--end POPUP-UP-->
+    <!--POPUP-DOWN-->
+      <div id="modal_form" class="popup-2" data-modal>
+        <div class="btn-close">
+          <a class="close_button" id="modal_close" data-close>&times;</a>
+        </div>  
+         <div class="description-modal">
+            <span>Регистрируйся</span> 
+         </div>
+        <div class="panel-form">
+          <form action="#" class="form-horizontal" id="bigForm2">
+              <div class="form-group">
+                <div class = "form-group ">
+                  <input type="email" name="email" id="email" class=" email form-control input-sm" placeholder="Ваш e-mail" required="required" aria-required="true">
+                </div>
+                <div class = "form-group ">
+                  <input id="lastName2" name="last_name2" required="" class=" lastname form-control input-sm" placeholder="Ваша фамилия" type="text" aria-required="true">
+                  <input type="text" name="first_name" id="first_name" class=" firstname form-control input-sm" placeholder="Ваше имя" required="required" aria-required="true">
+                </div>
+                <div class = "form-group ">
+                  <input type = "password" class = "form-control" id="formPassword2" name="password" minlength="6"  placeholder = "Пароль" required="" aria-required="true">
+                </div>
+              </div>
+              <div class = "form-group ">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4 input-code">
+                      <input type="text" name="phonecc" class=" phonecc form-control input-group-lg"  placeholder="code" required="" aria-required="true">
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8 input-phone">
+                      <input type="text" name="phone" class="form-control input-group-lg"  placeholder="Телефон" required="" aria-required="true">
+                    </div>
+                </div>
+              </div>
+            <button type="submit" class="btn btn-all">Регистрация</button>
+          </form>
+        </div>
+      </div>
+      <div id="overlay" data-overlay></div>
+      <!--end-POPUP-DOWN-->
+      <div class="container" id="0">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+              <div class="align-left">
+                
+                  <p>Все мечтают, но только лучшие действуют</p>
+                  <h1>Начни свой путь наверх <span>прямо сейчас!</span></h1>
+                
+              </div>
+              <div class="xs-section-title">
+                <p>
+                  Монетезируй технологии - это твой шанс уже сегодня стать успешным. Мы компания, которая инвестирует в будущее но зарабатывает для наших клиентов уже сейчас. Присоединяйся к нам и трансформируй свою жизнь. 
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="panel-form">
+                  <form class="form-horizontal" action=""  id="myform">
+                    <fieldset id="account_information" class="">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="username" name="username" placeholder="Ваше имя">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="lastusername" name="lastusername" placeholder="Ваша фамилия">
+                       
+                      </div>
+                      <p><a class="btn btn-all next">Далее</a></p>
+                    </fieldset>
+
+                    <fieldset id="security" class="">
+                      
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Ваш Email">
+                        </div>
+                        <div class="form-group">
+                          
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Пароль">
+                        </div>
+                      <p><a class="btn btn-all next">Далее</a></p>
+                    </fieldset>
+
+                    <fieldset id="personal_phone" class="">
+                      <div class = "form-group ">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4 input-code">
+                              <input type="text" name="phonecc" class=" phonecc form-control input-group-lg"  placeholder="Код" required="" aria-required="true">
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8 input-phone">
+                              <input type="text" name="phone" class="form-control input-group-lg"  placeholder="Телефон" required="" aria-required="true">
+                            </div>
+                        </div>
+                      </div>
+                        <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
+                        <input type="hidden" class="affiliate_id" name="affiliate_id" value="" autocomplete="off">
+                      <p><input class="btn btn-all" type="submit" value="Регистрируйся"></p>
+                    </fieldset>
+                  </form>
+              </div>
+            </div>
+            <!-- JUMP-MOUSE -->
+              <div class="mouse down" id="scroll">
+                <img src="img-content/mous.png" alt="mouse">
+              </div>
+            <!-- END-JUMP-MOUSE -->
+        </div>
+      </div>
+    </section>  
+  </header> 
+    <!-- end-HEADER -->
+  <div class="container">
+    <div class="row">
+      <section class="second" >
+        <div class="wrap">
+          <div class="container">
+            <div class="row">
+              <div class=" step_by_step col-md-3 mb-3">
+                <div class=" step h-100">
+                <div class="change-photo">
+                    <div class="img img-1">
+                      
+                    </div>
+                  </div>
+                 
+                  <p class="step__text">Без инфляции</p>
+                  <p class="style-step">Максимально возможное количество монет строго ограничено</p>
+                </div>
+              </div>
+              <div class=" step_by_step col-md-3 mb-3">
+                <div class=" step h-100">
+                  <div class="change-photo">
+                    <div class="img img-2">
+                      
+                    </div>
+                  </div>
+                  
+                  <p class="step__text">Надежно</p>
+                  <p class="style-step">Криптомонеты нельзя подделать, скопировать или подменить</p>
+                </div>
+              </div>
+              <div class=" step_by_step col-md-3 mb-3">
+                <div class=" step h-100">
+                  <div class="change-photo">
+                    <div class=" img img-3">
+                      
+                    </div>
+                  </div>
+                  <p class="step__text">Анонимно</p>
+                  <p class="style-step">Ни банки, ни налоговые инспекции не могут контролировать криптовалюты</p>
+                </div>
+              </div>
+              <div class=" step_by_step col-md-3 mb-3">
+                <div class=" step h-100">
+                <div class="change-photo">
+                    <div class=" img img-4">
+                      
+                    </div>
+                  </div>
+                  
+                  <p class="step__text">Доступно</p>
+                  <p class="style-step">Не нужно платить раздутые комиссии и пошлины банкам и прочим организациям</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <section class="calculator up" id="1">
+    <div class="container">
+        <div class="group">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="calc-left">
+                <h3>Калькулятор заработка</h3>
+                <p>Посчитайте свою прибыль</p>
+             
+                <div class="form-group">
+                  
+                    <input type="text" name="argument" class=" push form-control input-sm" placeholder="Введите данные" value="">
+                    <button class="btn btn-all btn-res" >Расчитать</button>
+                </div>
+              </div>
+            </div>
+            <div class=" calc-right col-md-6 col-sm-12">
+              <div class="magic">
+                <img src="img/iphone.png" alt="iphone">
+                <div class="some-info">
+                  <div class="fatch">
+                    <p>Ваша прибыль составит:</p>
+                    <div class="result procent">Введите данные для подсчета прибыли</div>
+                    <button class="btn btn-all scroll-down">Регистрация</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="famous-persons" id="2">
+    <div class="container">
+      <div class="row">
+        <div class="some-txt text-center col-md-12">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores earum facilis, hic id sed in ea corporis repellendus eius, eum accusamus optio voluptates?  <span>Ut, impedit aspernatur voluptas labore nobis!</span></h3>
+        </div>
+          <div class="block col-lg-6 col-md-12 col-sm-12 ">
+            <div class="description h-100">
+               <div class="row">
+                <div class="children col-md-6 col-sm-12 ">
+                  <div class="test">
+                    <div class="circle text-center">
+                      <div class="images">
+                         <img src="img-content/person1.png" alt="person">
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="children-text col-md-6 col-sm-12 ">
+                  <p class="name">Lorem ipsum</p>
+                  <p class="skill">Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block col-lg-6 col-md-12 col-sm-12 ">
+            <div class="description h-100">
+               <div class="row">
+                <div class="children col-md-6 col-sm-12">
+                  <div class="test">
+                    <div class="circle text-center">
+                      <div class="images">
+                         <img src="img-content/person2.png" alt="person">
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="children-text col-md-6 col-sm-12 ">
+                  <p class="name">Lorem ipsum</p>
+                  <p class="skill">Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" block col-lg-6 col-md-12 col-sm-12 ">
+            <div class="description h-100">
+               <div class="row">
+                <div class="children col-md-6 col-sm-12 ">
+                  <div class="test">
+                    <div class="circle text-center">
+                      <div class="images">
+                         <img src="img-content/person3.png" alt="person">
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="children-text col-md-6 col-sm-12 ">
+                  <p class="name">Lorem ipsum</p>
+                  <p class="skill">Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" block col-lg-6 col-md-12 col-sm-12 ">
+            <div class="description h-100 ">
+               <div class="row">
+                <div class="children col-md-6 col-sm-12 ">
+                  <div class="test">
+                    <div class="circle text-center">
+                      <div class="images last-photo">
+                         <img src="img-content/person4.png" alt="person">
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="children-text col-md-6 col-sm-12 ">
+                  <p class="name">Lorem ipsum</p>
+                  <p class="skill">Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--  spoiler -->
+        <div class="create text-center panel-heading">
+            <button class="btn btn-outline-dark spoiler-title">Смотреть всех</button>
+        
+          <div class="spoiler-body">
+            <div class="row">
+              <div class="block col-lg-6 col-md-12 col-sm-12 ">
+                <div class="description h-100">
+                   <div class="row">
+                    <div class="children col-md-6 col-sm-12 ">
+                      <div class="test">
+                        <div class="circle text-center">
+                          <div class="images">
+                             <img src="img-content/face6.png" alt="person">
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="children-text col-md-6 col-sm-12 ">
+                      <p class="name">Lorem ipsum</p>
+                      <p class="skill">Lorem ipsum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" block col-lg-6 col-md-12 col-sm-12 ">
+                <div class="description h-100 ">
+                   <div class="row">
+                    <div class="children col-md-6 col-sm-12 ">
+                      <div class="test">
+                        <div class="circle text-center">
+                          <div class="images last-photo">
+                             <img src="img-content/face7.png" alt="person">
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div class="children-text col-md-6 col-sm-12 ">
+                      <p class="name">Lorem ipsum</p>
+                      <p class="skill">Lorem ipsum</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt neque eius a, harum rem perferendis doloremque beatae, explicabo minus. Quibusdam blanditiis soluta veritatis pariatur cum quae, suscipit explicabo repudiandae sunt!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!--  end spoiler -->
+      </div>
+    </div>
+  </section>
+  <section class="sert" id="3">
+    <div class="container">
+      <div class="row">
+        <div class="sert-text text-center col-md-12">
+          <h3>Сертификаты</h3>
+        </div>
+        <div class="sert-block text-center col-md-6 col-sm-12 col-xs-12 ">
+          <div class="inside-sert">
+            <img src="img-content/sert.jpg" alt="img" data-atribyt="img" class="myImg">
+          </div>
+        </div>
+        <div class="sert-block text-center col-md-6 col-sm-12 col-xs-12">
+          <div class="inside-sert">
+            <img src="img-content/sert-2.jpg" alt="" data-atribyt="img" class="myImg">
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="4">
+        <div class="container">
+            <div class="row">
+                <div class="issues col-md-12 text-center">
+                  <h3>Ваши вопросы - <span>наши ответы!</span></h3>
+                </div>
+                <div class=" col-md-12">
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                  <a class="first" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Ни одна существующая криптовалюта никогда ранее не была официально одобрена правительством, даже биткойн?
+                                      <span> </span>
+                                  </a>
+                              </h4>
+                          </div>
+                          <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="panel-body">
+                                  <div class="panel-body-img"><img src="img-content/check.png" alt=""></div>
+                                  <div class="panel-body-text">Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere ipsum. </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                              <h4 class="panel-title">
+                                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Ни одна существующая криптовалюта никогда ранее не была официально одобрена?
+                                      <span> </span>
+                                  </a>
+                              </h4>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                              <div class="panel-body">
+                                  <div class="panel-body-img"><img src="img-content/check.png" alt=""></div>
+                                  <div class="panel-body-text">Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere ipsum. </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                  <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Ни одна существующая криптовалюта никогда ранее не была официально одобрена правительством, даже биткойн?
+                                      <span> </span>
+                                  </a>
+                              </h4>
+                          </div>
+                          <div id="collapseThree" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                  <div class="panel-body-img"><img src="img-content/check.png" alt=""></div>
+                                  <div class="panel-body-text">Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere ipsum. </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                  <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Ни одна существующая криптовалюта никогда ранее не была официально?
+                                      <span> </span>
+                                  </a>
+                              </h4>
+                          </div>
+                          <div id="collapseFour" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                  <div class="panel-body-img"><img src="img-content/check.png" alt=""></div>
+                                  <div class="panel-body-text">Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere ipsum. </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="headingThree">
+                              <h4 class="panel-title">
+                                  <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                     Ни одна существующая криптовалюта никогда ранее не была официально одобрена правительством, даже биткойн?
+                                      <span> </span>
+                                  </a>
+                              </h4>
+                          </div>
+                          <div id="collapseFive" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingThree">
+                              <div class="panel-body">
+                                  <div class="panel-body-img"><img src="img-content/check.png" alt=""></div>
+                                  <div class="panel-body-text">Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere ipsum. </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="finish-section">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 rightNow">
+                
+                <div class="some-text-footer">
+                  <p>
+                    Сделай смелый шаг прямо сейчас! <span>Регистрируйся! <span><img src="img-content/arrow.png" alt=""></span></span>
+                  </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="panel-form">
+                <form class="form-horizontal" action=""  id="secform">
+                    <fieldset id="account" class="">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="username2" name="username2" placeholder="Ваше имя">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="lastusername2" name="lastusername2" placeholder="Ваша фамилия">
+                       
+                      </div>
+                      <p><a class="btn btn-all next2">Далее</a></p>
+                    </fieldset>
+
+                    <fieldset id="security2" class="">
+                      
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email2" name="email2" placeholder="Ваш Email">
+                        </div>
+                        <div class="form-group">
+                          
+                            <input type="password" class="form-control" id="password2" name="password2" placeholder="Пароль">
+                        </div>
+                      <p><a class="btn btn-all next2">Далее</a></p>
+                    </fieldset>
+
+                    <fieldset id="personal_phone2" class="">
+                      <div class = "form-group ">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4 input-code">
+                              <input type="text" name="phonecc"2 class=" phonecc2 form-control input-group-lg"  placeholder="Код" required="" aria-required="true">
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-8 input-phone">
+                              <input type="text" name="phone2" class="phone2 form-control input-group-lg"  placeholder="Телефон" required="" aria-required="true">
+                            </div>
+                        </div>
+                      </div>
+                        <input type="hidden" name="session_id" class="session_id" value="" autocomplete="off">
+                        <input type="hidden" class="affiliate_id" name="affiliate_id" value="" autocomplete="off">
+                      <p><input class="btn btn-all" type="submit" value="Регистрируйся"></p>
+                    </fieldset>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="foo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <img src="img-content/logo-8.png" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6 Copyright">
+              <p>Copyright © 2018</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/valid.js"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/scroll-nav.js"></script>
+    <script src="js/scroll-down.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/zoom.js"></script>
+    <script src="js/popup.js"></script>
+    <!-- must have -->
+    <script src="js/multistep-form.js"></script>
+    <script src="js/script-support.js"></script> 
+  </body>
+</html>

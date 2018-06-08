@@ -1,0 +1,37 @@
+@font-face{
+	src:url("../fonts/AgoraSansProBlack.ttf") format("ttf"), url("../fonts/pfagorasanspro-black-webfont.woff") format("woff");
+	font-family: "pfagorasanspro-black-webfont";
+}
+@font-face{
+	src:url("../fonts/AgoraSansProBold.ttf") format("ttf"), url("../fonts/pfagorasanspro-bold-webfont.woff") format("woff");
+	font-family: "pfagorasanspro-bold-webfont";
+}
+@font-face{
+	src:url("../fonts/AgoraSansProMedium.ttf") format("ttf"), url("../fonts/pfagorasanspro-medium-webfont.woff") format("woff");
+	font-family: "pfagorasanspro-medium-webfont";
+}
+@font-face{
+	src:url("../fonts/pfagorasanspro-reg.ttf") format("ttf"), url("../fonts/pfagorasanspro-reg-webfont.woff") format("woff");
+	font-family: "pfagorasanspro-reg-webfont";
+}
+	/*/*/
+@font-face{
+	src:url("../fonts/pfagoraserifpro-black.ttf") format("ttf"), url("../fonts/pfagoraserifpro-black-webfont.woff") format("woff");
+	font-family: "pfagoraserifpro-black";
+}
+@font-face{
+	src:url("../fonts/pfagoraserifpro-bold.ttf") format("ttf"), url("../fonts/pfagoraserifpro-bold.woff") format("woff");
+	font-family: "pfagoraserifpro-bold";
+}
+@font-face{
+	src:url("../fonts/pfagoraserifpro-medium.ttf") format("ttf"), url("../fonts/pfagoraserifpro-medium-webfont.woff") format("woff");
+	font-family: "pfagoraserifpro-medium";
+}
+@font-face{
+	src:url("../fonts/pfagoraserifpro-regular.ttf") format("ttf"), url("../fonts/pfagoraserifpro-regular-webfont.woff") format("woff");
+	font-family: "pfagoraserifpro-regular-webfont";
+}
+@font-face{
+	src:url("../fonts/opensans.ttf") format("ttf"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+	font-family: "opensans";
+}
